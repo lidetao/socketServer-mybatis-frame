@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+	<!-- 数据库驱动 -->
+	<classPathEntry location="D:/dev/mysql-connector-java-5.1.27.jar" />
+
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+
+		<!-- 连接数据库 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost/wiki" userId="root" password="">
+		</jdbcConnection>
+
+		<!-- java类型处理 -->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- java model类 -->
+		<javaModelGenerator targetPackage="com.lidetao.dao.po"
+			targetProject="quickServer_spring_mybatis-frame/src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- SQL xml -->
+		<sqlMapGenerator targetPackage="com.lidetao.dao.po"
+			targetProject="quickServer_spring_mybatis-frame/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!-- java dao -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.lidetao.dao" targetProject="quickServer_spring_mybatis-frame/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- 代码生成依赖的数据库表 -->
+		<table tableName="wiki_block"></table>
+
+	</context>
+</generatorConfiguration>
