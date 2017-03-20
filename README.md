@@ -1,15 +1,15 @@
 # socketServer-mybatis-frame
 使用quickServer、spring、mybatis搭建socket通信框架。
 
-#核心清单
-1.quickserver:高并发socket server.
-2.gson:json-java bean的转换工具。
-3.mybatis:ORM映射。
-4.druid:数据库连接池.
-5.Generate:mybatis代码生成器。
+# 核心清单
+	1.quickserver	高并发socket server。
+	2.gson			json-java bean的转换工具。
+	3.mybatis		ORM映射。
+	4.druid			数据库连接池。
+	5.Generate		mybatis代码生成器。
 
-#项目结构
-——ROOT
+# 项目结构
+	——ROOT
 	|——pom.xml 				maven项目的依赖库与maven插件
 	|——generatorConfig.xml 	Generate插件配置项
 	|——lib&tool				Generate与项目依赖jar的资源
