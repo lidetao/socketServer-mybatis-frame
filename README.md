@@ -2,11 +2,11 @@
 使用quickServer、spring、mybatis搭建socket通信框架。
 
 ## 核心清单
-*quickserver	高并发socket server。
-*gson			json-java bean的转换工具。
-*mybatis		ORM映射。
-*druid			数据库连接池。
-*Generate		mybatis代码生成器。
+* quickserver:高并发socket server
+* gson:json-java bean的转换工具
+* mybatis:ORM映射
+* druid:数据库连接池
+* Generate:mybatis代码生成器
 
 ## 项目结构
 ```——ROOT
@@ -18,4 +18,5 @@
 		|——utils			项目工具类，ServerStart.java为可执行jar的入口，启动时加载resources下的配置文件。
 		|——socket			socket server与消息处理器
 		|——apiSvc			业务入口
-```		|——dao				mybatis的ORM映射代码
+		|——dao				mybatis的ORM映射代码
+```
