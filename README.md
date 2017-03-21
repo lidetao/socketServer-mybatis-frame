@@ -9,14 +9,15 @@
 * Generate:mybatis代码生成器
 
 ## 项目结构
-```——ROOT
-	|——pom.xml	maven项目的依赖库与maven插件
-	|——generatorConfig.xml	Generate插件配置项
-	|——lib&tool	Generate与项目依赖jar的资源
-	|——src/main/resources	项目资源文件
-	|——src/main/java	项目代码
-		|——utils	项目工具类，ServerStart.java为可执行jar的入口，启动时加载resources下的配置文件。
-		|——socket	socket server与消息处理器
-		|——apiSvc	业务入口
-		|——dao	mybatis的ORM映射代码
+```
+——ROOT
+|——pom.xml		maven项目的依赖库与maven插件
+|——generatorConfig.xml	Generate插件配置项
+|——lib&tool		Generate与项目依赖jar的资源
+|——src/main/resources	项目资源文件
+|——src/main/java	项目代码
+	|——utils		项目工具类，ServerStart.java为可执行jar的入口，启动时加载resources下的配置文件。
+	|——socket		socket server与消息处理器
+	|——apiSvc		业务入口
+	|——dao			mybatis的ORM映射代码
 ```
